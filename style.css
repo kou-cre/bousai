@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    font-family: serif;
+    background-image: url(img/wasi.png);
+    background-color: rgba(235, 236, 205,0.7);
+    background-blend-mode: lighten;
+    background-size: cover;
+    letter-spacing: 0.10em;
+}
+.body_gradient{
+    margin: 0;
+    background: linear-gradient(0deg,rgba(255,255,255),rgba(235, 236, 205,0) 15%, rgba(235, 236, 205,0) 70%,rgba(255,255,255) 83%);
+}
+article{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 32px;
+    font-weight: lighter;
+    text-shadow: 0px 1px 3px rgb(120, 120, 120);
+}
+.top img{
+    margin: 0;
+    width: 100%;
+    }
+nav{
+    margin: 0;
+    height: 100px;
+    background-color: #FFFFFF;
+}
+ul{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+nav li {
+    border-right:1px solid ;
+    border-image: linear-gradient(#FFFFFF 20%,#bfbfbf,#FFFFFF 80%)1;
+    }
+.li_left{
+    border-left: 1px solid;
+    border-image: linear-gradient(#FFFFFF 20%,#bfbfbf,#FFFFFF 80%)1;
+}
+nav a{
+    height:  100px;
+    padding: 20px 24px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    line-height: 100px;
+    transition: 0.5s;
+    }
+nav li a:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-top: 72px;
+}
+.main img{
+    width: 750px;
+}
+.text{
+    align-content: center;
+}
+.phone{
+    display: none;
+}
+.main h1{
+    margin: 12px;
+}
+.main p{
+    width: 300px;
+    margin: 12px;
+}
+.hot_spring_text{
+    margin-left: 24px;
+}
+.room_text{
+    margin-right: 24px;
+}
+.cook_text{
+    margin-left: 24px;
+}
+.room{
+    background-image: url(img/ekumo.png);
+    background-repeat: no-repeat;
+    background-position: 40px 50px;
+}
+.cook{
+    background-image: url(img/ekumo.png);
+    background-repeat: no-repeat;
+    background-position: 550px 10px;
+}
+.plans {
+    background-image: url(img/ekumo2.png);
+    background-repeat: no-repeat;
+    background-position: 340px 450px;
+    padding-top: 72px;
+}
+.plans h1{
+    text-align: center;
+}
+.kome {
+    font-size: 14px;
+    margin-right: 103px;
+}
+.plans2{
+    max-width: 1132px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.plans span{
+    font-size: 24px;
+    font-weight: bold;
+}
+.plan{
+    width: 320px;
+}
+.plan h2 {
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(90deg,rgba(45,85,90,0),rgba(230,180,34,1) ,rgba(230,180,34,0))1;
+}
+.access{
+    margin-top: 72px;
+}
+.access h1{
+    text-align: center;
+}
+.access2{
+    display: flex;
+    justify-content: center;
+}
+.access2 img{
+    width: 570px;
+}
+.access_text{
+    margin-right: 24px;
+    padding-bottom: 34px;
+}
+.access_text h3 {
+    font-size: 24px;
+    font-weight: lighter;
+}
+.access_text p{
+    width: 480px;
+}
+.map p{
+    font-size: 14px;
+    margin-top: 0px;
+}
+.contact{
+    margin-top: 72px;
+    padding-bottom: 103px;
+}
+.contact h1{
+    text-align: center;
+}
+.contact2{
+    display: flex;
+    justify-content: center;
+}
+.contact_text{
+    margin-left: 45px;
+}
+.contact_text p{
+    width: 615px;
+    font-size: 15px;
+}
+.contact_text h4{
+    font-size: 24px;
+    font-weight: lighter;
+}
