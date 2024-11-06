@@ -1,1 +1,74 @@
+@media screen and (max-width:1100px){
+    article{
+        max-width: 700px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+    .plan h2{
+        font-size: 20px;
+    }
+    nav{
+        display: none;
+    }
+    .PC{
+        display: none;
+    }
+    .phone{
+        display: block;
+    }
+    .main {
+        flex-wrap: wrap;
+    }
+    .main img{
+        width: 100%;
+    }
+    .main p{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .hot_spring_text{
+        margin-left: 0;
+    }
+    .room_text{
+        margin-right: 0;
+    }
+    .cook_text{
+        margin-left: 0;
+    }
+    .plans2{
+        flex-wrap: wrap;
+    }
+    .plan{
+        margin: 0 8px;
+    }
+    .access2{
+        flex-wrap: wrap;
+    }
+    .access_text{
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .access_text p{
+        width: 400px;
+    }
+    .access2 img{
+        width: 400px;
+    }
+    .contact2{
+        flex-wrap: wrap;
+    }
+    .contact_text{
+        margin-left: 0px;
+    }
+    .contact_text p{
+        width: 400px;
+    }
+    .kome{
+        width: 100%;
+        margin-right: 0;
+    }
+}
 
