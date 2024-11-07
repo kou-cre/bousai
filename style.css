@@ -126,9 +126,10 @@ nav li a:hover{
 .plan{
     width: 320px;
 }
-.plan p{
+.ume, .take, .matsu{
     width: 320px;
-    height: 100px;
+    height: 120px;
+    margin-bottom: 1.5em;
 }
 .plan h2 {
     font-size: 24px;
