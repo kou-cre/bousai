@@ -1,4 +1,111 @@
 @media screen and (max-width:1100px){
+    .menubox-wrap{display: block;}
+    .menu-btn{
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        display: flex;
+        height: 60px;
+        width: 60px;
+        border: solid 2px #000;
+        border-radius: 8px;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after{
+        content:'';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 10px;
+        background-color: #000;
+        position: absolute;
+    }
+    .menu-btn span:before{
+        bottom: 8px;
+    }
+    .menu-btn span::after{
+        top: 8px;
+    }
+    #menu-check:checked ~ .menu-btn span{
+        background-color: rgba(0,0,0,0);
+    }
+    #menu-check:checked ~ .menu-btn span:before{
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #menu-check:checked ~ .menu-btn span:after{
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    #menu-check{
+        display: none;
+    }
+    .unbox{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(127, 246, 255,0);
+        z-index: 8;
+    }
+    #menu-check:checked ~ .unbox{
+       display: block;
+    }
+    .menubox{
+        width: 15em;
+        height: 100%;
+        position: fixed;
+        top: 100%;
+        right: 0;
+        z-index: 9;
+        border-left: solid 3px #000;
+        border-image: linear-gradient(0deg,#fff,#303030,#fff)1;
+        background-color: rgb(235, 236, 205);
+        transition: all .5s;
+    }
+    #menu-check:checked ~ .menubox{
+        top: 0;
+    }
+    .menubox ul{
+        padding: 0 1em 0;
+    }
+    .menubox ul li{
+        width: 100%;
+        border-bottom: solid 1px #000;
+        list-style: none;
+    }
+    .menubox ul li a{
+        display: block;
+        width: 100%;
+        font-size: 0.95rem;
+        box-sizing: border-box;
+        color: #000;
+        text-decoration: none;
+        padding: 0.6em 0.9em 0.7em 0;
+        position: relative;
+    }
+    .menubox ul li a:hover{
+        color: rgba(230,180,34,1);
+        background-color: rgba(30,30,30,.7);
+    }
+    .menubox ul li a:before{
+        content: '';
+        width: 0.4em;
+        height: 0.4em;
+        border-top: solid 2px #000;
+        border-right: solid 2px #000;
+        transform: rotate(45deg);
+        position: absolute;
+        right: 11px;
+        top: 16px;
+    }
+
+    
     article{
         max-width: 700px;
     }
@@ -25,9 +132,9 @@
         width: 100%;
     }
     .main p{
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
     }
     .hot_spring_text{
         margin-left: 0;
@@ -42,33 +149,57 @@
         flex-wrap: wrap;
     }
     .plan{
-        margin: 0 8px;
+        margin: 0 1%;
+    }
+    .kome {
+        width: 70%;
+        margin-right: 0;
+        margin-left: 16%;
+        text-align: left;
     }
     .access2{
         flex-wrap: wrap;
     }
     .access_text{
+        width: 80%;
         margin-right: 0;
-        margin-bottom: 0;
-    }
-    .access_text p{
-        width: 400px;
-    }
-    .access2 img{
-        width: 400px;
-    }
-    .contact2{
+        padding-bottom: 0;
+        display: flex;
+        justify-content: center;
         flex-wrap: wrap;
     }
+    .access_text p{
+        width: 80%;
+    }
+    .access_text h3{
+        font-size: 22px;
+        width: 80%;
+    }
+    .map {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .map p{
+        width: 80%;
+    }
+    .access2 img{
+        width: 80%;
+    }
+    .contact2{
+        width: 80%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .contact2 img {
+     width: 80%;   
+    }
     .contact_text{
+        width: 80%;
         margin-left: 0px;
-    }
-    .contact_text p{
-        width: 400px;
-    }
-    .kome{
-        width: 100%;
-        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
-
